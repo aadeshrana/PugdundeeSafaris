@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/treeHouseLodgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="KEN RIVER LODGE - PANNA"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.example.thearbiter.pugdundeesafaris.Adapters.InfiniteViewPager
+                android:id="@+id/kingsLodgeslideshow"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/treeHouseLodgeTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/kingdescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kingsLodgeslideshow"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/kenriverDescrip" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/infoKingCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kingdescrip"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="20dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/kingInformation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INFORMATION"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/kingAirport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/kingInformation"
+                        android:layout_marginTop="10dp"
+                        android:text="Airport"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/AirportText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/railwayText"
+                        android:layout_alignStart="@+id/railwayText"
+                        android:layout_alignTop="@+id/kingAirport"
+                        android:text="Jabalpur - 190 km. | Khajuraho - 26 km." />
+
+                    <TextView
+                        android:id="@+id/kingRailway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/AirportText"
+                        android:layout_marginTop="5dp"
+                        android:text="Railway"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/railwayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView4"
+                        android:layout_alignStart="@+id/textView4"
+                        android:layout_alignTop="@+id/kingRailway"
+                        android:text="Jhansi - 200 km. | Satna - 90km. | Khajuraho - 26km." />
+
+                    <TextView
+                        android:id="@+id/kingCredit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/railwayText"
+                        android:layout_marginTop="10dp"
+                        android:text="Credit Card"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView6"
+                        android:layout_alignLeft="@+id/cottageText"
+                        android:layout_alignStart="@+id/cottageText"
+                        android:text="NA" />
+
+                    <TextView
+                        android:id="@+id/cottageText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/swimmingText"
+                        android:layout_alignStart="@+id/swimmingText"
+                        android:layout_alignTop="@+id/textView6"
+                        android:text="6 AC Huts and 6 Cottages" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/kingCredit"
+                        android:layout_marginTop="10dp"
+                        android:text="Rooms"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/kingSwimming"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/cottageText"
+                        android:layout_marginTop="10dp"
+                        android:text="Swimming Pool"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/swimmingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView"
+                        android:layout_alignStart="@+id/textView"
+                        android:layout_alignTop="@+id/kingSwimming"
+                        android:text="N.A." />
+
+                    <TextView
+                        android:id="@+id/kingSwiming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/kingCredit"
+                        android:layout_alignRight="@+id/kingCredit"
+                        android:layout_below="@+id/kingSwimming"
+                        android:layout_marginTop="10dp"
+                        android:text="Board Plan"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/kingSwiming"
+                        android:layout_toEndOf="@+id/kingInformation"
+                        android:layout_toRightOf="@+id/kingInformation"
+                        android:text="Ap, Jp and Packages" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/linearFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoKingCard"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingActivitiesz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="2dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kingtitleActz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACTIVITIES"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewz"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingtitleActz"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Jeep Safari, Boat Safari, Angling , Bird Watching, Nature Trails, Excursions to Khajuraho, Kalinjar Fort and Temples of Panna. Over night camping in reserve forest" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingActivities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kingtitleAct1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACCESS"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingtitleAct1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Best connected by flight and train to Khajuraho (26kms) from Delhi." />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearFirst"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingWhenTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kingtitleAct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="When To Go"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/whenTOText"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingtitleAct"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="October to Mid April" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kingStyletxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="STYLE"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/styleText"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingStyletxt"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rustic Country Living" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearThird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearSecond"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingDinningCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kingDining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DINNING"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kingDinningText"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingDining"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Tree Top Restaurant and Bar." />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingUspCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kinguspText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="USP"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kinguspDesc"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kinguspText"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Riverside setting &amp; great camaraderie" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearfourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearThird"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingAddressCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/kingAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kingAddressText"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingAddress"
+                            android:layout_gravity="center"
+
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Ken River Lodge, Panna National Park, Village - Madla, Distt. - Panna, MP - 488001, India" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/kingResvCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="50">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/kingResText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RESERVATION"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kingResDesc"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kingResText"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Phone - +91 - 124 - 2970497, 2571404, 2570404 Mobile - +91 8800637711
+Email - sales@pugdundeesafaris.com" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

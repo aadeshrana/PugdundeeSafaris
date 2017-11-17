@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aboutisMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Guest Experiences"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/aboutUsimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/aboutisMain"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/guestcard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutUsimage"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Beautiful property, loved the tree house."
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView11"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Michael Stricker- 29/03/16"
+
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView12"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="“Beautiful property, loved the tree house. The staff was so attentive + the “bush dinners” as unexpected surprise. Very good food! Karan was an excellent guide. Beautiful area.. Thank you so very much”
+
+Source: Guest Book"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/guestcard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guestcard1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Fantastic stay, all the staff are so friendly"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView14"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Peter Rance – 28/03/16"
+
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView15"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Fantastic stay, all the staff are so friendly and professional and the guides and naturalists really know what they are talking about. They made a great difference. Accommodation and food excellent too, especially in the evening meal in the trees by candlelight!\n
+
+Source: Guest Book
+"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/guestcard3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guestcard2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="Blissful!"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView31"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="David B Dorking,February 2016, travelled as a couple"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView32"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Our tree house was wonderful - tucked away along a private path. It had every amenity possible, with an extremely comfortable bed and well-equipped bathroom. copious amounts of very hot water (how do they do it?!) and its own gorgeous balcony. All the staff were charming, helpful and extremely smart. Nothing was too much trouble for them, and the place ran like clockwork. Oh, and even the food was perfect! Ashish Tirkey, the manager, was lovely and an extremely good guide. Our long term dream of seeing tigers was realised on FIVE occasions, when our guides managed to find us these elusive, magnificent beasts close at hand. The whole experience was beyond words.
+
+Source: Tripadvisor
+"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/guestcard4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guestcard3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="“Great setting amongst bamboo”"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView41"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="BarbKale Sydney, Australia Reviewed March 2015"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView42"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="We really enjoyed this lodge, our room was large and comfortable and the deck with a view all round of bamboo and trees. Particularly we enjoyed the talks the naturalists gave, the library and the way we were looked after going for the early morning drives, the blankets and hotwater bottle and the breakfast in the Park. Our only downside was we never saw a tiger so we were unlucky. Our guide did his best.\n
+
+Source: Tripadvisor
+"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

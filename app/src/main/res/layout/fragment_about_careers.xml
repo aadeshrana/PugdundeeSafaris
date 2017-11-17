@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:text="Join Our Team"
+                android:id="@+id/aboutisMain"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/aboutUsimage"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/aboutisMain"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutUsimage"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Lodge Managers"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <TextView
+
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView41"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="The Lodge Manager is the overall in charge of the unit and focuses on running the unit smoothly. He strives to create a constantly improving guest experience and a robust team. He reports to the managing director. The naturalist team, operations and lodge accounts report to him."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView42"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Prerequisites"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <TextView
+
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView43"
+
+
+                        android:padding="5dp"
+                        android:text="\u2022 Good English speaking and writing skills.\n\u2022 Good command over basic computer skills.\n\u2022 8-10 years experience in the field of hotel operations and leading a large team in a rural setup."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/secondcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstcard"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Naturalists"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                    <TextView
+
+                        android:id="@+id/textView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView51"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Wildlife Camp Naturalist needed to interpret Central Indian forests and its wildlife to visiting guests.
+We are looking for energetic individuals with a passion for interacting with people who visit our wildlife camps for wildlife experience and travel. Our wildlife safaris consists of morning and evening trips into national parks, special visits to tribal villages and local events for our Indian and overseas guests.
+The suitable person must be able to work long hours and enjoy interacting with people and have the ability to learn and share information on Indian forests, its people and wildlife with our guests."
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView52"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Prerequisites"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <TextView
+
+                        android:id="@+id/textView54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView53"
+
+
+                        android:padding="5dp"
+                        android:text="\u2022 Good English speaking and writing skills.\n\u2022 Good driving skills with a valid commercial vehicle license.\n\u2022 2-3 years experience as a naturalist or field work in wildlife.\n\nPlease forward your resume with latest picture and two references to manav@pugdundeesafaris.com"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

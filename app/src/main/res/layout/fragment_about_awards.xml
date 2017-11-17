@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:text="Awards"
+            android:id="@+id/aboutisMain"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_below="@id/aboutisMain"
+            android:id="@+id/linear1"
+            >
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/aboutUsimage"
+            android:id="@+id/parksizecard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="50"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="2dp"
+            android:layout_marginTop="4dp"
+
+            >
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/award1"
+                    />
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="WORLD TRAVEL AWARDS"
+                android:id="@+id/textView11"
+                android:textColor="#000000"
+                android:layout_below="@id/award1"
+                />
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Kanha Earth Lodge was awarded as India’s Leading Wildlife Resort by World Travel Awards for 2013, 2014 &amp; 2015."
+                    android:id="@+id/textView12"
+
+                    android:layout_below="@id/textView11"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/aboutUsimage"
+                android:id="@+id/parksizecard1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp"
+                android:layout_marginTop="4dp"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/award2"
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="STAR AWARDS"
+                        android:id="@+id/textView21"
+                        android:textColor="#000000"
+                        android:layout_below="@id/award2"
+                        />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Pugdundee Safaris awards as the Best Safari Company for the year 2013 by Star Awards"
+                        android:id="@+id/textView22"
+
+                        android:layout_below="@id/textView21"
+                        android:gravity="center"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <!-- SECOND LINER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_below="@id/linear1"
+            android:id="@+id/linear2"
+            android:layout_marginTop="2dp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/aboutUsimage"
+                android:id="@+id/card3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp"
+                android:layout_marginTop="4dp"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/award3"
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="STAR AWARDS"
+                        android:id="@+id/textView31"
+                        android:textColor="#000000"
+                        android:layout_below="@id/award3"
+                        />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Kanha Earth Lodge awarded The Most Admired Eco Lodge of the Year on 14th Feb 2013 at Taj Land Ends, Mumbai."
+                        android:id="@+id/textView32"
+
+                        android:layout_below="@id/textView31"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/aboutUsimage"
+                android:id="@+id/card4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp"
+                android:layout_marginTop="4dp"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/award4"
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="TOFT WILDLIFE AWARDS"
+                        android:id="@+id/textView41"
+                        android:textColor="#000000"
+                        android:layout_below="@id/award4"
+                        />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Pugdundee Safaris was awarded as the Best Wildlife Promotional Company by TOFT for 2014"
+                        android:id="@+id/textView42"
+
+                        android:layout_below="@id/textView41"
+                        android:gravity="center"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <!--THIRD ROW-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_below="@id/linear2"
+            android:id="@+id/linear3"
+            android:layout_marginTop="2dp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/aboutUsimage"
+                android:id="@+id/card5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp"
+                android:layout_marginTop="4dp"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/award5"
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="TOFT WILDLIFE AWARDS"
+                        android:id="@+id/textView51"
+                        android:textColor="#000000"
+                        android:layout_below="@id/award5"
+                        />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Runner up awarded to Pugudndee Safaris for the Wildlife and Tourism Initiative of the year 2012 for the newly launched Mobile Safaris - TOFT Wildlife Tourism Awards - 2012."
+                        android:id="@+id/textView52"
+
+                        android:layout_below="@id/textView51"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/aboutUsimage"
+                android:id="@+id/card6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="50"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp"
+                android:layout_marginTop="4dp"
+
+                >
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/award6"
+                        />
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="TOFT WILDLIFE AWARDS"
+                        android:id="@+id/textView61"
+                        android:textColor="#000000"
+                        android:layout_below="@id/award6"
+                        />
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Runner up awarded to Sukru Kumal at Ken River Lodge for Lodge Naturalist Award of the year 2012 - TOFT Wildlife Tourism Awards - 2012."
+                        android:id="@+id/textView62"
+
+                        android:layout_below="@id/textView61"
+                        android:gravity="center"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

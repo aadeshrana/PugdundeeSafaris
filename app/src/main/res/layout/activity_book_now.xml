@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    >
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_toolbar" />
+    <TextView
+        android:id="@+id/avForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Check Availability Form"
+        android:textSize="30dp"
+        android:layout_below="@id/app_bar"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/cardviewone"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/avForm"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:padding="4dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerhotel"
+                android:overlapAnchor="false"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Select Hotel      "
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/cardviewtwo"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        android:layout_margin="2dp"
+        android:layout_below="@id/cardviewone"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/two"
+            android:layout_below="@id/cardviewone"
+            android:padding="4dp"
+            >
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="#EEE"
+                android:layout_centerVertical="true"
+                android:id="@+id/ss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFBB88FF"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_marginTop="10dp"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttondate1"
+                    android:overlapAnchor="false"
+                    android:background="@android:color/transparent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:layout_toEndOf="@+id/textView3"
+                    android:textColor="#000000"
+                    android:onClick="checkInDate"
+                    />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Check In Date     "
+                android:id="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/cardviewthree"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        android:layout_margin="2dp"
+        android:layout_below="@id/cardviewtwo"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:layout_below="@id/two"
+            android:padding="4dp"
+            >
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardBackgroundColor="#EEE"
+                android:layout_centerVertical="true"
+                android:id="@+id/ss1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFBB88FF"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_marginTop="10dp"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttondate2"
+                    android:overlapAnchor="false"
+                    android:background="@android:color/transparent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_toEndOf="@+id/textView4"
+                    android:textColor="#000000"
+                    android:onClick="checkOutDate"
+                    />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Check Out Date  "
+                android:id="@+id/textView4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/cardviewfour"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        android:layout_margin="2dp"
+        android:layout_below="@id/cardviewthree"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/four"
+            android:layout_below="@id/three"
+            android:padding="4dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerrooms"
+                android:overlapAnchor="false"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5" />
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="No of Rooms     "
+                android:id="@+id/textView5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/cardviewfive"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        android:layout_margin="2dp"
+        android:layout_below="@id/cardviewfour"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/five"
+            android:layout_below="@id/four"
+            android:padding="4dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerroomtype"
+                android:overlapAnchor="false"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6" />
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Room Type         "
+                android:id="@+id/textView6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/cardviewsix"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="1dp"
+        android:layout_margin="2dp"
+        android:layout_below="@id/cardviewfive"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/six"
+            android:layout_below="@id/five"
+            android:padding="4dp"
+            >
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnernation"
+                android:overlapAnchor="false"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_toEndOf="@+id/textView7" />
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nationality          "
+                android:id="@+id/textView7"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardBackgroundColor="#c7b384"
+
+        android:id="@+id/Bsign_up"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFBB88FF"
+        android:layout_below="@id/cardviewsix"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Availibility"
+            android:id="@+id/button"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/cardviewsix"
+            android:layout_centerHorizontal="true"
+            android:onClick="checkAvail"
+            />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
